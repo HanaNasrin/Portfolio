@@ -1,79 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hana | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <canvas id="particles"></canvas>
 
-<header>
+  <header>
+    <a href="#home" class="logo">
+      <i class="fa-solid fa-user"></i>
+      <span>Hana</span>
+    </a>
 
-<div class="logo">
-<i class="fa-solid fa-user"></i>
-</div>
+    <button class="menu-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-<nav>
+    <nav class="nav-links">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Skills</a>
-<a href="#">Projects</a>
-<a href="#">Contact</a>
+    <button class="theme" aria-label="Toggle theme">
+      <i class="fa-solid fa-moon"></i>
+    </button>
+  </header>
 
-</nav>
+  <main>
+    <section id="home" class="home">
+      <div class="left show-on-scroll">
+        <h3>Hi,</h3>
+        <h1>I&apos;m <span>Hana</span></h1>
+        <h2 class="typing">Full Stack Developer</h2>
+        <p>I build polished web experiences with React, Django, and Python, blending design and functionality into seamless products.</p>
 
-<div class="theme">
-<i class="fa-solid fa-moon"></i>
-</div>
+        <div class="cta-row">
+          <a href="mailto:hanakm288@gmail.com?subject=Portfolio%20Inquiry" class="btn">Let&apos;s Talk</a>
+          <a href="#projects" class="btn secondary">See Projects</a>
+        </div>
 
-</header>
+        <div class="social">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="mailto:hanakm288@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
 
-<section class="home">
+      <div class="right show-on-scroll">
+        <div class="blob">
+          <img src="profile.png" alt="Portrait of Hana">
+        </div>
+      </div>
+    </section>
 
-<div class="left">
+    <section id="about" class="section">
+      <h2 class="title show-on-scroll">About Me</h2>
+      <div class="about-grid">
+        <div class="about-card show-on-scroll">
+          <p>I am a passionate developer who enjoys creating modern, user-friendly applications from concept to deployment. My work focuses on strong design, smooth performance, and clear storytelling through interfaces.</p>
+        </div>
+        <div class="about-card show-on-scroll">
+          <div class="stat">
+            <strong>3+</strong>
+            <span>Years Building Web Apps</span>
+          </div>
+          <div class="stat">
+            <strong>20+</strong>
+            <span>Projects Completed</span>
+          </div>
+          <div class="stat">
+            <strong>100%</strong>
+            <span>Commitment to Quality</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h3>Hi,</h3>
+    <section id="skills" class="section">
+      <h2 class="title show-on-scroll">Skills</h2>
+      <div class="skill-grid">
+        <div class="card show-on-scroll">
+          <i class="fa-brands fa-react"></i>
+          <h3>React</h3>
+          <p>Interactive UIs and component-driven interfaces.</p>
+        </div>
+        <div class="card show-on-scroll">
+          <i class="fa-brands fa-python"></i>
+          <h3>Django</h3>
+          <p>Reliable backend services and API development.</p>
+        </div>
+        <div class="card show-on-scroll">
+          <i class="fa-solid fa-code"></i>
+          <h3>Python</h3>
+          <p>Automation, logic, and scalable scripting solutions.</p>
+        </div>
+        <div class="card show-on-scroll">
+          <i class="fa-solid fa-palette"></i>
+          <h3>UI/UX</h3>
+          <p>Clean design systems with responsive layouts.</p>
+        </div>
+      </div>
+    </section>
 
-<h1>I'm <span>Hana</span></h1>
+    <section id="projects" class="section">
+      <h2 class="title show-on-scroll">Projects</h2>
+      <div class="project-grid">
+        <article class="project show-on-scroll">
+          <h3>Modern Dashboard</h3>
+          <p>A responsive analytics panel made with React and API integrations.</p>
+          <a href="#contact">Request Demo</a>
+        </article>
+        <article class="project show-on-scroll">
+          <h3>Commerce Platform</h3>
+          <p>Full-stack ecommerce experience with secure checkout and admin tools.</p>
+          <a href="#contact">Request Demo</a>
+        </article>
+        <article class="project show-on-scroll">
+          <h3>Creative Portfolio</h3>
+          <p>A visually rich personal site built to highlight work and personality.</p>
+          <a href="#contact">Request Demo</a>
+        </article>
+      </div>
+    </section>
 
-<h2>React.js Developer</h2>
+    <section id="contact" class="section">
+      <h2 class="title show-on-scroll">Contact Me</h2>
+      <div class="contact-grid">
+        <div class="contact-card show-on-scroll">
+          <h3>Let&apos;s build something great</h3>
+          <p>Feel free to reach out for collaboration, freelance work, or a quick chat about your next idea.</p>
+          <ul>
+            <li><i class="fa-solid fa-envelope"></i> hanakm288@gmail.com</li>
+            <li><i class="fa-solid fa-location-dot"></i> Based in the UAE</li>
+            <li><i class="fa-solid fa-clock"></i> Available for new projects</li>
+          </ul>
+        </div>
 
-<a href="#" class="btn">Contact</a>
+        <form id="contact-form" class="show-on-scroll">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+          <button type="submit" class="btn form-btn">Send Message</button>
+          <p class="form-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
 
-<div class="social">
+  <footer>
+    <p>© 2026 Hana. All rights reserved.</p>
+  </footer>
 
-<a href="#"><i class="fab fa-linkedin"></i></a>
-
-<a href="#"><i class="fab fa-github"></i></a>
-
-
-</div>
-
-</div>
-
-<div class="right">
-
-<div class="blob">
-
-<img src="profile.png">
-
-</div>
-
-</div>
-
-</section>
-
-<script src="script.js"></script>
-
+  <script src="particles.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
