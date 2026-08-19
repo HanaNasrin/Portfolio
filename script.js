@@ -102,7 +102,7 @@ form?.addEventListener('submit', (event) => {
     return;
   }
 
-  const mailtoLink = `mailto:hanakm288@gmail.com?subject=${encodeURIComponent(`Portfolio enquiry from ${name}`)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
+  const mailtoLink = `mailto:hanakmnasrin@gmail.com?subject=${encodeURIComponent(`Portfolio enquiry from ${name}`)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`;
   window.location.href = mailtoLink;
   formMessage.textContent = 'Thanks! Your email app should open with your message ready.';
   form.reset();
